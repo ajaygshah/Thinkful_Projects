@@ -1,0 +1,173 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#header{
+	margin-top: 10px;
+	text-align: right;
+}
+
+#header li {
+	display: inline-block;
+	color: gray;
+	padding-right: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+	font-family: arial;
+	font-size: 13px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#image {
+	vertical-align: middle;
+}
+
+#signin {
+	background-color: #436EEE;
+	color: white;
+	padding: 7px 15px;
+	font-weight: bold;
+	font-size: 13px;
+	border-radius: 3px;
+	border: 1px solid;
+}
+
+#main {
+	text-align: center;
+	margin-top: 150px;
+}
+
+#input {
+	text-align: center;
+	margin-top: 20px;
+}
+
+input {
+	border: 1px solid gray;
+	height: 25px;
+	width: 600px;
+	font-size: 17px;
+}
+
+input:active {
+	color: blue;
+}
+
+#input img {
+	vertical-align: middle;
+	margin-left: -30px;
+}
+
+#buttons {
+	text-align: center;
+	margin-top: 10px;
+}
+
+button {
+	background-color: #F2F2F2;
+	border: 1px solid #E3E3E3;
+	color: #5C5C5C;
+	font-weight: bold;
+	padding: 5px;
+	font-size: 11px;
+}
+
+#container {
+       min-height: 100%;
+       height: auto !important;
+       height: 100%;
+       margin: 0px 0px -45px 0px;
+ }
+
+html, body {
+	height: 100%;
+}
+
+body {
+       margin: 0px;
+       padding: 0px;
+       min-width: 800px;
+ }
+
+#buttons {
+padding: 0px 0px 41px 0px;
+}
+
+#nofooter {
+	padding-bottom: 45px;
+}
+
+#footer {
+		padding-top: 15px;
+		width: 100%;
+		background-color: #F2F2F2;
+		height: 30px;
+		min-width: 800px;
+}
+
+#footer li {
+	display: inline;
+	padding-right: 20px;
+	margin-left: 10px;
+}
+
+#left {
+	float: left;
+	padding-bottom: 10px;
+	margin-left: 15px;
+}
+
+#right {
+	float: right;
+}
