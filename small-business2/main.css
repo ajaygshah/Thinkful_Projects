@@ -1,0 +1,83 @@
+body {
+	font-family: arial;
+	background-color: white;
+}
+
+#container {
+	width: 800px;
+	margin: 0 auto;
+	min-width: 800px;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color: white;
+}
+
+h1 {
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	text-align: center;
+	font-family: 'Gabriela', serif;
+}
+
+#nav {
+	list-style: none;
+	text-align: center;
+
+}
+
+#nav li {
+	display: inline;
+	margin-right: 20px;
+	text-decoration: underline;
+	font-family: 'PT Serif Caption', serif;
+	font-weight: bold;
+}
+
+#form {
+	border: 1px solid black;
+	padding: 15px;
+	padding-right: 25px;
+	border-radius: 10px;
+	background-color: #00868B;
+	width: 175px;
+	margin-left: 10px;
+	float: left;
+	box-shadow: 5px 5px 5px black;
+}
+
+#form li {
+	display: block;
+	margin-bottom: 10px;
+}
+
+label {
+	color: white;
+	font-family: 'PT Serif Caption', serif;
+}
+
+button {
+	padding: 5px 10px 5px 10px;
+	margin-top: 10px;
+}
+
+input {
+	border-radius: 5px;
+	border: 1px solid black;
+	height: 30px;
+	font-family: arial;
+	font-weight: bold;
+
+}
+
+h2 {
+	font-family: 'PT Serif Caption', serif;
+}
+
+img {
+	width: 500px;
+	height: 370px;
+	margin-left: 30px;
+	padding-top: 15px;
+	margin-bottom: 40px;
+}
