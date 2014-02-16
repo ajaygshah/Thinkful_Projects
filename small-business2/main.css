@@ -79,5 +79,38 @@ img {
 	height: 370px;
 	margin-left: 30px;
 	padding-top: 15px;
-	margin-bottom: 40px;
+	margin-bottom: 70px;
+}
+
+#connect {
+	list-style: none;
+}
+
+#footer {
+	float: left;
+	margin-top: -55px;
+}
+
+h4 {
+	font-family: 'PT Serif Caption', serif;
+	float: left;
+}
+
+#footer {
+	width: 400px;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+#connect img {
+	height: 25px;
+	width: 25px;
+	margin-bottom: -10px;
+	margin-top: -15px;
+}
+
+
+#connect li {
+	display: inline;
+
 }
