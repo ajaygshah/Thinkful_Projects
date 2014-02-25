@@ -1,0 +1,52 @@
+body {
+	background: url("food/food.png");
+}
+
+#container {
+	margin: 0 auto;
+	width: 800px;
+	line-height: 40px;
+}
+
+#box {
+	text-align: center;
+}
+
+h1,h2,input, #add, button {
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+input {
+	height: 30px;
+	width: 400px;
+	font-size: 25px;
+	vertical-align: middle;
+}
+
+#add, button {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+ul {
+	list-style: decimal;
+}
+
+li {
+	text-transform: capitalize;
+	cursor: pointer;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 30px;
+}
+
+.strike {
+	text-decoration: line-through;
+}
+
+button {
+	margin-left: 20px;
+}
