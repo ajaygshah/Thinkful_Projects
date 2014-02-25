@@ -47,13 +47,14 @@ $(document).ready(function() {
 //Below is the function to add the item from the input list. 
 function add_data() {
 	
-	if($("#in").val() == "") {
+	if($.trim($("#in").val()) == "") {
 			alert("Please type an item. Thank you!");
-			$("#in").focus();
+			$("#in").val('').focus();
 	}
 	else {
 		$("ul").append("<li>" + $("#in").val() + "</li>");
 		$("#in").val("");
+		$("#in").focus();
 	}
 }
 
