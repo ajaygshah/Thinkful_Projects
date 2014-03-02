@@ -5,7 +5,7 @@ $(document).ready(function() {
 var fizzbuzz = function (num) {
 	var num;
 	num = +(prompt("Please input a number. "));
-	while(isNaN(num) || num == "" || num%1 !=0) {
+	while(isNaN(num) || num == "" || num%1 !=0 || $.trim(num)=="") {
 		alert("please enter number ONLY!");
 		num = prompt("Please input a number. ");
 	}
