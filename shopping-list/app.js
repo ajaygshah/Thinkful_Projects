@@ -20,12 +20,14 @@ $(document).ready(function() {
     var button2 = $("<button>Remove</button>");
     $("ul").on("mouseenter", "li", function() {
         $(this).append(button2);
-        $(this).on('click', 'button', function() {
-            $(this).closest('li').remove();
-        })
+        
     }).on("mouseleave", "li", function() {
         $(this).find('button').remove();
     })
+
+    $(document).on('click', 'button', function() {
+        $(this).closest('li').remove();
+    });
     //......................................................
     //Enable sorting list by user preference Jquery UI
     $("ul").sortable();
