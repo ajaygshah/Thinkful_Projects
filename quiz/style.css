@@ -1,0 +1,41 @@
+	body {
+	
+		color: #EED2EE;
+		background: url("background.jpg");
+
+	}
+
+
+
+	li,p,#head,#que,#result,body {
+		font-size: 25px;
+	}
+	li{
+		margin-bottom: 15px;
+	}
+
+	li:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	#result {
+		font-size: 25px;
+	}
+	#head {
+		margin-top: -20px;
+	}
+
+	#que {
+		margin-top: 15px;;
+	}
+
+	h1 {
+		font-family: 'Belgrano', serif;
+	}
+	#ans,#que,#head, #feedback, #result, body {
+		font-family: 'Peralta', cursive;
+	}
+
+	#btn {
+		background-color: #EED2EE;
+	}
