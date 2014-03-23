@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
 $("#btn").hide();
+$("#corr, #incorr").hide();
  
 function questions(question, choices, answer) {
  
@@ -44,7 +45,7 @@ behave(i);
 function behave(i) {
                 $("li").click(function() {
                                 if($(this).index() == listOfQuestions[i].answer) {
-                                       alert("Correct Answer!");
+                                       $("#corr").fadeIn();
                                         score++;
                                         $("#result").text("Score: " + score + " / " + listOfQuestions.length);
                                         i++;
@@ -60,17 +61,19 @@ function behave(i) {
                                                 
                                         }
                                         else {
+                                               
                                                 num++;
                                                 $("#head").text("Question " +num + " of " + listOfQuestions.length);
 
                                                 que(i);
+                                                 $("#corr").fadeOut(2000);
                                                   
                                                 behave(i);
                                                 
                                         }
                                 }
                                 else {
-                                         alert("Incorrect Answer!");
+                                         $("#incorr").fadeIn();
                                          $("#result").text("Score: " + score + " / " + listOfQuestions.length);
                                         i++;
                                         $("#que").empty();
@@ -85,10 +88,12 @@ function behave(i) {
                                                 
                                         }
                                         else {
+                                               
                                                 num++;
                                                 $("#head").text("Question " +num + " of " + listOfQuestions.length);
 
                                                 que(i);
+                                                 $("#incorr").fadeOut(2000);
                                                 behave(i);
                                                 
                                         }
@@ -112,7 +117,7 @@ function comments() {
 
 function newgame() {
     $("#feedback, #result, #head, #que, #ans").empty();
-    $("#btn").hide();
+    $("#btn, #corr, #incorr").hide();
     i = 0;
     j;
     score = 0;
