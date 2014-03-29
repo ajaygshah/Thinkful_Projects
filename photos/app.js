@@ -6,6 +6,16 @@ $(document).ready(function() {
 	})
 });
 
+ $.ajaxSetup({ cache: true });
+  $.getScript('https://connect.facebook.net/en_UK/all.js', function(){
+    FB.init({
+      appId: '270182096483988',
+    });     
+    $('#loginbutton,#feedbutton').removeAttr('disabled');
+    FB.getLoginStatus(updateStatusCallback);
+  });
+
+
 var getphotos = function(tags) {
 	var photu = $("body").find("#show img");
 
