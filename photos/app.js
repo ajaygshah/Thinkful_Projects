@@ -9,7 +9,7 @@ $(document).ready(function() {
  $.ajaxSetup({ cache: true });
   $.getScript('https://connect.facebook.net/en_UK/all.js', function(){
     FB.init({
-      appId: '270182096483988',
+      appId: '270182096483988'
     });     
     $('#loginbutton,#feedbutton').removeAttr('disabled');
    FB.getLoginStatus(function(response) {
