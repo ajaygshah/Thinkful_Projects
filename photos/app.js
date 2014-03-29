@@ -6,7 +6,7 @@ $(document).ready(function() {
 	})
 });
 
-var getphotos= function(tags) { $.ajaxSetup({ cache: true });
+ $.ajaxSetup({ cache: true });
   $.getScript('https://connect.facebook.net/en_UK/all.js', function(){
     FB.init({
       appId: '270182096483988'
@@ -30,7 +30,7 @@ var getphotos= function(tags) { $.ajaxSetup({ cache: true });
   }
  });
   });
-};
+
 
 var getphotos = function(tags) {
 	var photu = $("body").find("#show img");
