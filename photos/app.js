@@ -20,6 +20,7 @@ $(document).ready(function() {
     // request, and the time the access token 
     // and signed request each expire
     var uid = response.authResponse.userID;
+    $("#user-detail").html(uid);
     var accessToken = response.authResponse.accessToken;
   } else if (response.status === 'not_authorized') {
     // the user is logged in to Facebook, 
