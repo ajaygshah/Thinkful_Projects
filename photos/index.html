@@ -41,6 +41,16 @@ img {
       // login status of the person. In this case, we're handling the situation where they 
       // have logged in to the app.
       testAPI();
+
+      $(document).ready($(function () {
+    $("#fblogout").click(facebooklogout);
+}));
+
+function facebooklogout() {
+    FB.logout(function (response) {
+    }
+)};
+
     } else if (response.status === 'not_authorized') {
       // In this case, the person is logged into Facebook, but not into the app, so we call
       // FB.login() to prompt them to do so. 
@@ -89,10 +99,13 @@ img {
 
 
 <form class="gettags" onsubmit="return false;">
+  <input type="submit"
 <input type="text" name="tag" autofocus required>
-<input type="submit" value="Submit">
+<input type="submit" value="Log Out" id="fblogout">
 
 </form>
+
+
 
 <div id="show">
 	<img>
