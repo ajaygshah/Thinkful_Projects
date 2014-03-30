@@ -17,6 +17,16 @@ img {
 }	
 
 </style>
+<script>
+ $(document).ready($(function () {
+    $("#fblogout").click(facebooklogout);
+}));
+
+function facebooklogout() {
+    FB.logout(function (response) {
+    }
+)};
+    </script>
 </head>
 
 <body>
@@ -42,14 +52,6 @@ img {
       // have logged in to the app.
       testAPI();
 
-      $(document).ready($(function () {
-    $("#fblogout").click(facebooklogout);
-}));
-
-function facebooklogout() {
-    FB.logout(function (response) {
-    }
-)};
 
     } else if (response.status === 'not_authorized') {
       // In this case, the person is logged into Facebook, but not into the app, so we call
