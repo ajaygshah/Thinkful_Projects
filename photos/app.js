@@ -4,6 +4,23 @@ $(document).ready(function() {
 		var tags = $(this).find("input[name='tag']").val();
 		getphotos(tags);
 	})
+
+function updateStatusCallback(){
+   alert('Status updated!!');
+   // Your logic here
+}
+
+
+  $.ajaxSetup({ cache: true });
+  $.getScript('http://connect.facebook.net/en_UK/all.js', function(){
+    FB.init({
+      appId: '270182096483988',
+    });     
+    $('#loginbutton,#feedbutton').removeAttr('disabled');
+    FB.getLoginStatus(updateStatusCallback);
+  });
+
+
 });
 
 
@@ -28,3 +45,4 @@ var getphotos = function(tags) {
 	})
 
 };
+
