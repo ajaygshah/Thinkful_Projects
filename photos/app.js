@@ -5,7 +5,7 @@ $(document).ready(function() {
 		getphotos(tags);
 	})
 
-function updateStatusCallback(){
+var hello = function updateStatusCallback(){
    alert('Status updated!!');
    // Your logic here
 }
@@ -17,7 +17,7 @@ function updateStatusCallback(){
       appId: '270182096483988',
     });     
     $('#loginbutton,#feedbutton').removeAttr('disabled');
-    FB.getLoginStatus(updateStatusCallback);
+    FB.getLoginStatus(hello);
   });
 
 
