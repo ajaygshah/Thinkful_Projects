@@ -75,3 +75,12 @@ a{
 		width: 70px;
 		font-weight: bold;
 	}
+
+	#contactform {
+		margin: 0 auto;
+		width: 800px;
+	}
+
+	#contactform h1 {
+		text-align: center;
+	}
