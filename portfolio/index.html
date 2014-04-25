@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One|Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script type="text/javascript" src="app.js"></script>
+	<title>Ajay Shah</title>
+</head>
+<body>
+	<div id="container">
+		<div id="menu">
+			<ul>
+				<li><a href="#aboutme">About me</a>
+					<li><a href="#slideshow">Portfolio</a></li>
+					<li><a href="#contactform">Contact me</a></li>
+				</ul>
+			</div>
+			<div id="aboutme">
+				<p>I am Ajay Shah. I am looking forward to work with small businesses to create beautiful websites. A functional website has more to it than the content. If you are a small business owner, you know website is just a starting point for your customers. </p>
+				<p>If you have a website already, I can work with you to enhance it or built one from scratch.</p>
+				<p>As a freelancer developer, I look forward to work on creating websites that will meet the needs of your small business and your customers.</p>
+			</div>
+			<img src="img/art1.jpg">
+			<p>Click on the image to visit the demo website in the slideshow below</p>
+			<div id="slideshow">
+
+				<a href="javascript:gotoshow()"><img src="img/shoppinglist.png" name="slide" border=0 width=300 height=375></a>
+			</div>
+<script>
+<!--
+
+//configure the paths of the images, plus corresponding target links
+slideshowimages("img/shoppinglist.png","img/smallbusiness.png","img/travelquiz.png","img/newsweather.png")
+slideshowlinks("http://ajaygshah.github.io/Thinkful_Projects/shopping-list/index.html","http://ajaygshah.github.io/Thinkful_Projects/small-business2/index.html","http://ajaygshah.github.io/Thinkful_Projects/quiz/index.html","http://ajaygshah.github.io/Thinkful_Projects/newsweather/index.html")
+
+//configure the speed of the slideshow, in miliseconds
+var slideshowspeed=2500
+
+var whichlink=0
+var whichimage=0
+function slideit(){
+	if (!document.images)
+		return
+	document.images.slide.src=slideimages[whichimage].src
+	whichlink=whichimage
+	if (whichimage<slideimages.length-1)
+		whichimage++
+	else
+		whichimage=0
+	setTimeout("slideit()",slideshowspeed)
+}
+slideit()
+
+//-->
+</script>
+
+<div id="contactform">
+	<h1>Let's get in touch!</h1>
+	<form action="MAILTO:ajay.shah162@gmail.com" method="post">
+		<table>
+			<tr><td>Name:</td><td><input type="text"></td></tr><br>
+			<tr><td>Email:</td><td><input type="email"></td></tr>
+			<tr><td>Message:</td><td><textarea cols="50" rows="10"></textarea></td></tr>
+			<tr><td><input type="submit" value="Submit" id="button"></td></tr>
+		</table>
+	</form>
+
+</div>
+
+
+</div>
+</body>
+</html>
