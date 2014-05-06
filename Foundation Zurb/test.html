@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/foundation.css" />
+	<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Antic+Didone' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/vendor/modernizr.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".aboutme").fadeIn(3000);
+		});
+	</script>
+	<style type="text/css">
+
+	#head-container {
+		background: url('img/background.gif');
+	}
+
+	.menu {
+		margin-top: 50px;
+	}
+
+	.nav {
+		font-family: 'Quicksand', sans-serif;
+		color: white;
+		text-align: center;
+		font-size: 30px;
+		letter-spacing: 3px;
+		padding-bottom: 15px;
+		font-weight: bold;
+	}
+
+	h1, h2 {
+		text-align: center;
+		font-family: 'Antic Didone', serif;
+		letter-spacing: 10px;
+		color: orange;	
+	}
+
+	.logo {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.aboutme {
+		display: none;
+		margin-top: 50px;
+		border: 1px solid white;	
+		color: #87CEFF;
+		font-family: 'Josefin Sans', sans-serif;
+	}
+
+	.aboutme p, .steps p {
+		line-height: 40px;
+		font-size: 30px;
+	}
+
+	.process {
+		border: 1px solid white;
+		margin-top: 20px;
+	}
+
+	.process h1 {
+		color: white;
+		font-size: 20px;
+	}
+
+	.process h2 {
+		font-size: 25px;
+	}
+
+	.process p {
+		color: white;
+		line-height: 40px;
+	}
+
+	.steps {
+		color: white;
+		font-family: 'Josefin Sans', sans-serif;
+	}
+
+	#slide-container {
+		background: url('img/abstract.jpg');
+	}
+
+
+	.orbit-container {
+		width: 70%;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	.orbit-container .orbit-timer .orbit-progress {
+		background-color: black;
+		padding-top: 5px;
+	}
+
+	.orbit-container .orbit-prev, .orbit-container .orbit-next {
+		background-color: black;
+	}
+	
+	.orbit-container .orbit-prev:hover, .orbit-container .orbit-next:hover {
+		background-color: black;
+	}
+
+	.orbit-container .orbit-slide-number {
+		color: black;
+		font-size: 20px;
+	}
+
+	.orbit-container .orbit-slides-container li .orbit-caption {
+		background-color: black;
+	}
+
+	.orbit-container .orbit-timer > span {
+      display: none;
+      position: absolute;
+      top: 0px;
+      right: 0;
+      width: 11px;
+      height: 14px;
+      border: solid 4px black;
+      border-top: none;
+      border-bottom: none; 
+  	}
+
+  	.orbit-container .orbit-timer.paused > span {
+      right: -4px;
+      top: 0px;
+      width: 11px;
+      height: 14px;
+      border: inset 8px;
+      border-left-style: solid;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+      border-color: transparent black transparent transparent; }
+      .orbit-container .orbit-timer.paused > span.dark {
+        border-color: transparent #333333 transparent transparent; 
+    }
+	</style>
+</head>
+<body>
+	<div id="head-container">
+		<div class="row">
+			<div class="small-12 columns">
+				<h1>SHOONYA WEB BOUTIQUE</h1>
+			</div>
+		</div>
+
+		<div class="row menu">
+			<div class="large-3 columns nav">
+				ABOUT ME
+			</div>
+			<div class="large-3 columns nav">
+				SERVICES
+			</div>
+			<div class="large-3 columns nav">
+				PORTFOLIO
+			</div>
+			<div class="large-3 columns nav">
+				CONTACT
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="small-12 columns aboutme">
+				<p>I am Ajay Shah. I am looking forward to work with small businesses to create beautiful websites. A website has more to it than the content. If you are a small business owner, you know a website is just a starting point for your customers.
+				</p>
+				<p>
+					If you have a website already, I can work with you to enhance it or built one from scratch.
+				</p>
+				<p>	
+					As a freelancer developer, I look forward to work on creating websites that will meet the needs of your small business and your customers.
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="large-12 columns process">
+				<h1>DESIGN & DEVELOPMENT PROCESS</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="large-6 columns process">
+				<h2>DESIGN</h2>
+				<p>
+					Whether it is the design layout or how you want your users to interact with the website, we have it covered. I will provide you with different designs, layout and user interface options to maximize your time and resources.
+				</p>		
+			</div>
+			<div class="large-6 columns process">
+				<h2>DEVELOPMENT</h2>
+				<p>
+					If you have a design, we will code it up for you. Otherwise, we will start from scratch (Shoonya). We have the resources to do front-end development as well as to provide your customers an option to interact with your business' Facebook, Twitter or Linkedin page.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="slide-container">
+		<div class="row slides">
+			<div class="small-12 columns">
+				<ul data-orbit>
+					<li>
+						<img src="img/newsweather.png" width="100%">	
+						<div class="orbit-caption">
+	      					<a href="http://ajaygshah.github.io/Thinkful_Projects/newsweather/index.html" target="_blank">Click here to visit the website.</a>
+	    				</div>
+					</li>
+					<li class="active">
+						<img src="img/shoppinglist.png" width="120%">
+						<div class="orbit-caption">
+	      					<a href="http://ajaygshah.github.io/Thinkful_Projects/shopping-list/index.html" target="_blank">Click here to visit the website.</a>
+	    				</div>
+					</li>
+					<li>
+						<img src="img/smallbusiness.png" width="130%">
+						<div class="orbit-caption">
+	      					<a href="http://ajaygshah.github.io/Thinkful_Projects/small-business2/index.html" target="_blank">Click here to visit the website.</a>
+	    				</div>
+					</li>
+					<li>
+						<img src="img/travelquiz.png" width="120%">
+						<div class="orbit-caption">
+	      					<a href="http://ajaygshah.github.io/Thinkful_Projects/quiz/index.html" target="_blank">Click here to visit the website.</a>
+	    				</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/foundation/foundation.js"></script>
+	<script src="js/foundation/foundation.orbit.js"></script>
+	<script>
+  		$(document).foundation({
+  			orbit: {
+  				timer_speed: 4000,
+  				pause_on_hover: false,
+  				slide_number: false
+  			}
+  		});
+	</script>
+
+
+	</body>
+	</html>
